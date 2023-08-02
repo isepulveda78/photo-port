@@ -1,24 +1,14 @@
-import List from "./components/List"
 
+import coverImage from "../src/assets/cover/cover-image.jpg"
+import About from "./components/About"
+import Nav from "./components/Nav";
 function App() {
-  /** Props */
-  const groceries = [
-    {
-      id: 1,
-      name: 'Peanut Butter'
-    },
-    {
-      id: 2,
-      name: 'Wine'
-    },
-    {
-      id: 3,
-      name: 'Cheese'
-    }
-  ]
+
   return (
     <div >
-      <List groceries={groceries}/>
+      <Nav />
+      <About />
+      <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
     </div>
   );
 }
