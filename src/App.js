@@ -1,9 +1,10 @@
 
 import { useState } from "react"
 import About from "./components/About"
-import Nav from "./components/Nav";
-import Gallery from "./components/Gallery";
-import ContactForm from "./components/Contact";
+import Nav from "./components/Nav"
+import Gallery from "./components/Gallery"
+import ContactForm from "./components/Contact"
+
 function App() {
   const [contactSelected, setContactSelected] = useState(false)
   const [categories] = useState([
@@ -41,7 +42,7 @@ function App() {
           )}
         </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
